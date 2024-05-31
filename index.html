@@ -12,16 +12,6 @@
             padding: 0;
             color: #333;
         }
-        .detail-item {
-            display: grid; /* Gunakan display grid */
-            grid-template-columns: 150px 1fr; /* Tentukan dua kolom, pertama 150px dan kedua fleksibel */
-            gap: 10px; /* Tambahkan jarak antar kolom */
-            margin-bottom: 10px; /* Tambahkan jarak antar detail item */
-        }
-
-        .detail-item label {
-            font-weight: bold; /* Tambahkan ketebalan font */
-        }
         .container {
             max-width: 800px;
             margin: 40px auto;
@@ -30,66 +20,86 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-
         header {
             padding: 20px 0;
             border-bottom: 1px solid #ddd;
             background: #6fac71;
             color: #fff;
-            padding: 1rem 0;
             text-align: center;
         }
-
         header h1 {
             margin: 0;
             font-size: 2em;
         }
-
         header p {
             margin: 10px 0 0;
             font-size: 1em;
-            color: #666;
+            color: #fff;
         }
-
+        section {
+            margin-top: 20px;
+        }
+        .detail-item {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .detail-item label {
+            font-weight: bold;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
         }
-
         table, th, td {
             border: 1px solid #ddd;
         }
-
         th, td {
             padding: 10px;
             text-align: left;
         }
-
         th {
             background-color: #f2f2f2;
-            min-width: 200px; /* Menentukan lebar minimum */
+            min-width: 200px;
         }
-
         .text-right {
             text-align: right;
         }
-
         footer {
             text-align: center;
             padding: 20px 0;
             border-top: 1px solid #ddd;
             margin-top: 20px;
         }
-
         footer p {
             margin: 0;
             color: #666;
         }
-
         .centered-link {
             text-align: center;
             margin-top: 20px;
+        }
+        .centered-link a {
+            color: #007BFF;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .centered-link a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .detail-item {
+                display: block;
+            }
+            .detail-item label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .centered-link a {
+                word-break: break-word;
+            }
         }
     </style>
 </head>
@@ -118,54 +128,53 @@
                 <span>: Penilaian Hasil Belajar Biologi</span>
             </div>
             <div class="centered-link">
-            <a href="https://ejournal.unp.ac.id/index.php/bioeducation/article/view/7150">https://ejournal.unp.ac.id/index.php/bioeducation/article/view/7150</a>
-            <table>
+                <a href="https://ejournal.unp.ac.id/index.php/bioeducation/article/view/7150">https://ejournal.unp.ac.id/index.php/bioeducation/article/view/7150</a>
             </div>
-            <tr>
-                <th>Judul</th>
-                <td style="text-align: justify;">Peningkatan Keterampilan Berpikir Tingkat Tinggi Mahasiswa Melalui Penerapan Asesmen Portofolio Pada Mata Kuliah Telaah Kurikulum Dan Buku Ajar Biologi</td>
-            </tr>
-            <tr>
-                <th>Nama Jurnal</th>
-                <td style="text-align: justify;">BIOEDUCATION JOURNAL</td>
-            </tr>
-            <tr>
-                <th>Volume dan Halaman</th>
-                <td style="text-align: justify;">Volume 1 Nomor 1 halaman 22-33</td>
-            </tr>
-            <tr>
-                <th>Tahun Terbit</th>
-                <td style="text-align: justify;">2017</td>
-            </tr>
-            <tr>
-                <th>Penulis</th>
-                <td style="text-align: justify;">Yosi Laila Rahmi Heffi Alberida</td>
-            </tr>
-            <tr>
-                <th>Latar Belakang Masalah</th>
-                <td style="text-align: justify;">Latar Belakang masalah	Jurnal ini membahas tentang pentingnya meningkatkan keterampilan berpikir tingkat tinggi (HOTS) siswa dalam menghadapi perubahan zaman dan teknologi. Kurikulum biologi yang terus berkembang menuntut siswa untuk memiliki kemampuan berpikir kritis, analitis, dan kreatif. Namun, banyak siswa yang masih kesulitan dalam mengembangkan keterampilan ini. Salah satu faktor yang menyebabkan kesulitan ini adalah kurangnya penggunaan metode pembelajaran yang tepat. Metode pembelajaran tradisional yang berfokus pada hafalan dan latihan soal tidak efektif untuk mengembangkan HOTS. Oleh karena itu, diperlukan metode pembelajaran yang lebih inovatif dan berpusat pada siswa.</td>
-            </tr>
-            <tr>
-                <th>Tujuan Penelitian</th>
-                <td style="text-align: justify;">Penelitian ini bertujuan untuk mendeskripsikan peningkatan kemampuan berpikir tingkat tinggi siswa menerapkan penilaian portofolio.</td>
-            </tr>
-            <tr>
-                <th>Metode Penelitian</th>
-                <td style="text-align: justify;">Metode yang digunakan dalam penelitian ini adalah penelitian tindakan kelas (action research).</td>
-            </tr>
-            <tr>
-                <th>Hasil Penelitian</th>
-                <td style="text-align: justify;">Penelitian ini menemukan bahwa penggunaan penilaian portofolio terbukti efektif dalam meningkatkan keterampilan berpikir tingkat tinggi (HOTS) siswa pada mata pelajaran biologi. Hal ini ditunjukkan dengan peningkatan kemampuan siswa dalam menganalisis informasi, memecahkan masalah, dan berpikir secara kreatif. Penelitian ini juga mengidentifikasi beberapa faktor yang memengaruhi efektivitas penilaian portofolio, yaitu kualitas portofolio, keterlibatan siswa, dan umpan balik konstruktif dari guru. Portofolio yang berkualitas tinggi, partisipasi aktif siswa, dan arahan yang jelas dari guru terbukti meningkatkan efektivitas metode ini dalam mengembangkan HOTS siswa.</td>
-            </tr>
-            <tr>
-                <th>Kelebihan Penelitian</th>
-                <td style="text-align: justify;">Penelitian ini menemukan bahwa penggunaan penilaian portofolio terbukti efektif dalam meningkatkan keterampilan berpikir tingkat tinggi (HOTS) siswa pada mata pelajaran biologi. Hal ini ditunjukkan dengan peningkatan kemampuan siswa dalam menganalisis informasi, memecahkan masalah, dan berpikir secara kreatif. Penelitian ini juga mengidentifikasi beberapa faktor yang memengaruhi efektivitas penilaian portofolio, yaitu kualitas portofolio, keterlibatan siswa, dan umpan balik konstruktif dari guru. Portofolio yang berkualitas tinggi, partisipasi aktif siswa, dan arahan yang jelas dari guru terbukti meningkatkan efektivitas metode ini dalam mengembangkan HOTS siswa.</td>
-            </tr>
-            <tr>
-                <th>Kekurangan Penelitian</th>
-                <td style="text-align: justify;">Penelitian ini juga memiliki beberapa kekurangan. Generalisasi hasil penelitian terbatas karena dilakukan pada satu fakultas dengan mata kuliah yang spesifik, sehingga mungkin tidak dapat diterapkan ke seluruh mahasiswa atau mata kuliah lainnya. Durasi penelitian yang hanya berlangsung satu semester mungkin tidak cukup untuk melihat perubahan jangka panjang dalam kemampuan berpikir mahasiswa, dan penelitian jangka panjang mungkin diperlukan. Penilaian portofolio sering kali melibatkan unsur subjektivitas, baik dari sisi dosen maupun mahasiswa, yang bisa mempengaruhi keakuratan dan konsistensi hasil. Selain itu, penelitian tindakan kelas sering kali tidak memiliki kelompok kontrol yang jelas, sehingga sulit memastikan bahwa peningkatan kemampuan berpikir tingkat tinggi semata-mata disebabkan oleh penilaian portofolio, bukan oleh faktor-faktor lain. Variabilitas dalam implementasi penilaian portofolio oleh dosen juga dapat mempengaruhi hasil, sehingga standarisasi mungkin diperlukan untuk memastikan konsistensi.</td>
-            </tr>
-            
+            <table>
+                <tr>
+                    <th>Judul</th>
+                    <td style="text-align: justify;">Peningkatan Keterampilan Berpikir Tingkat Tinggi Mahasiswa Melalui Penerapan Asesmen Portofolio Pada Mata Kuliah Telaah Kurikulum Dan Buku Ajar Biologi</td>
+                </tr>
+                <tr>
+                    <th>Nama Jurnal</th>
+                    <td style="text-align: justify;">BIOEDUCATION JOURNAL</td>
+                </tr>
+                <tr>
+                    <th>Volume dan Halaman</th>
+                    <td style="text-align: justify;">Volume 1 Nomor 1 halaman 22-33</td>
+                </tr>
+                <tr>
+                    <th>Tahun Terbit</th>
+                    <td style="text-align: justify;">2017</td>
+                </tr>
+                <tr>
+                    <th>Penulis</th>
+                    <td style="text-align: justify;">Yosi Laila Rahmi Heffi Alberida</td>
+                </tr>
+                <tr>
+                    <th>Latar Belakang Masalah</th>
+                    <td style="text-align: justify;">Jurnal ini membahas tentang pentingnya meningkatkan keterampilan berpikir tingkat tinggi (HOTS) siswa dalam menghadapi perubahan zaman dan teknologi. Kurikulum biologi yang terus berkembang menuntut siswa untuk memiliki kemampuan berpikir kritis, analitis, dan kreatif. Namun, banyak siswa yang masih kesulitan dalam mengembangkan keterampilan ini. Salah satu faktor yang menyebabkan kesulitan ini adalah kurangnya penggunaan metode pembelajaran yang tepat. Metode pembelajaran tradisional yang berfokus pada hafalan dan latihan soal tidak efektif untuk mengembangkan HOTS. Oleh karena itu, diperlukan metode pembelajaran yang lebih inovatif dan berpusat pada siswa.</td>
+                </tr>
+                <tr>
+                    <th>Tujuan Penelitian</th>
+                    <td style="text-align: justify;">Penelitian ini bertujuan untuk mendeskripsikan peningkatan kemampuan berpikir tingkat tinggi siswa menerapkan penilaian portofolio.</td>
+                </tr>
+                <tr>
+                    <th>Metode Penelitian</th>
+                    <td style="text-align: justify;">Metode yang digunakan dalam penelitian ini adalah penelitian tindakan kelas (action research).</td>
+                </tr>
+                <tr>
+                    <th>Hasil Penelitian</th>
+                    <td style="text-align: justify;">Penelitian ini menemukan bahwa penggunaan penilaian portofolio terbukti efektif dalam meningkatkan keterampilan berpikir tingkat tinggi (HOTS) siswa pada mata pelajaran biologi. Hal ini ditunjukkan dengan peningkatan kemampuan siswa dalam menganalisis informasi, memecahkan masalah, dan berpikir secara kreatif. Penelitian ini juga mengidentifikasi beberapa faktor yang memengaruhi efektivitas penilaian portofolio, yaitu kualitas portofolio, keterlibatan siswa, dan umpan balik konstruktif dari guru. Portofolio yang berkualitas tinggi, partisipasi aktif siswa, dan arahan yang jelas dari guru terbukti meningkatkan efektivitas metode ini dalam mengembangkan HOTS siswa.</td>
+                </tr>
+                <tr>
+                    <th>Kelebihan Penelitian</th>
+                    <td style="text-align: justify;">Penelitian ini menemukan bahwa penggunaan penilaian portofolio terbukti efektif dalam meningkatkan keterampilan berpikir tingkat tinggi (HOTS) siswa pada mata pelajaran biologi. Hal ini ditunjukkan dengan peningkatan kemampuan siswa dalam menganalisis informasi, memecahkan masalah, dan berpikir secara kreatif. Penelitian ini juga mengidentifikasi beberapa faktor yang memengaruhi efektivitas penilaian portofolio, yaitu kualitas portofolio, keterlibatan siswa, dan umpan balik konstruktif dari guru. Portofolio yang berkualitas tinggi, partisipasi aktif siswa, dan arahan yang jelas dari guru terbukti meningkatkan efektivitas metode ini dalam mengembangkan HOTS siswa.</td>
+                </tr>
+                <tr>
+                    <th>Kekurangan Penelitian</th>
+                    <td style="text-align: justify;">Penelitian ini juga memiliki beberapa kekurangan. Generalisasi hasil penelitian terbatas karena dilakukan pada satu fakultas dengan mata kuliah yang spesifik, sehingga mungkin tidak dapat diterapkan ke seluruh mahasiswa atau mata kuliah lainnya. Durasi penelitian yang hanya berlangsung satu semester mungkin tidak cukup untuk melihat perubahan jangka panjang dalam kemampuan berpikir mahasiswa, dan penelitian jangka panjang mungkin diperlukan. Penilaian portofolio sering kali melibatkan unsur subjektivitas, baik dari sisi dosen maupun mahasiswa, yang bisa mempengaruhi keakuratan dan konsistensi hasil. Selain itu, penelitian tindakan kelas sering kali tidak memiliki kelompok kontrol yang jelas, sehingga sulit memastikan bahwa peningkatan kemampuan berpikir tingkat tinggi semata-mata disebabkan oleh penilaian portofolio, bukan oleh faktor-faktor lain. Variabilitas dalam implementasi penilaian portofolio oleh dosen juga dapat mempengaruhi hasil, sehingga standarisasi mungkin diperlukan untuk memastikan konsistensi.</td>
+                </tr>
             </table>
         </section>
         <footer>
